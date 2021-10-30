@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Employee Details</title>
+</head>
+<body>
+  <ul>
+    {% for each_data in data %}
+        <li>{{ each_data.first_name }}  {{ each_data.last_name }}</li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>

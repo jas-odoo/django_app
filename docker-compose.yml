@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: bash -c "python company/manage.py makemigrations && python company/manage.py migrate && python company/manage.py runserver 0.0.0.0:8000"
+    container_name: company_portal
+    ports:
+      - "8000:8000"
