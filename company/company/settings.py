@@ -25,7 +25,7 @@ SECRET_KEY = '2uvu7+#5pg1wnc#*i(86s=y*se&)jd!=z*(a#aqs7l#ry1%)9+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -51,8 +51,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'company.urls'
-
-ALLOWED_HOSTS = ['*']
 
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
